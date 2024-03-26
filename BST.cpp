@@ -29,7 +29,6 @@ class BST{
             root = new Node(v);
         }
 
-
         //how does the find operation actually work?
         //try to run through the function calls for finding 7 on the following tree
         /*
