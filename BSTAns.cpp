@@ -147,8 +147,8 @@ class BST{
             }else{
                 Node* succParent = findSuccessorParent(curr->right);
                 curr->val = succParent->left->val;
+                succParent->left = succParent->left->right;
                 delete succParent->left;
-                succParent->left = nullptr;
             }
             //return removeValueHelper(curr, v);
             return curr;
